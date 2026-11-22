@@ -3,106 +3,137 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AL-FALAH ASSOCIATION WELFARE GROUP - Ranibennur</title>
+<title>AL-FALAH ASSOCIATION WELFARE GROUP | Ranibennur</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#0a1a3a;color:#fff;padding-bottom:80px;position:relative;overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;background:url('logo.jpg') center/contain no-repeat;opacity:0.08;z-index:0}
-header,section,footer{position:relative;z-index:1}
-header{text-align:center;padding:20px 15px;background:linear-gradient(180deg,#0a1a3a,#122a5e);border-bottom:3px solid #d4af37}
-.logo{width:110px;height:110px;border-radius:50%;border:3px solid #d4af37;object-fit:cover;background:#fff}
-h1{font-size:24px;color:#ffd700;margin-top:10px;line-height:1.2}
-.sub{font-size:13px;opacity:.9;margin-top:5px}
-.lang{display:flex;gap:8px;justify-content:center;margin-top:15px}
-.lang button{padding:8px 16px;border-radius:20px;border:1px solid #d4af37;background:transparent;color:#fff;cursor:pointer}
-.lang button.active{background:#d4af37;color:#000;font-weight:bold}
-.card{background:#fff;color:#111;margin:15px;border-radius:16px;padding:18px;box-shadow:0 5px 20px rgba(0,0,0,.3)}
-.founder{text-align:center}
-.founder img{width:150px;height:150px;border-radius:50%;border:4px solid #d4af37;object-fit:cover}
-.stars{color:#f5b301;font-size:20px;margin:5px 0}
-h2{color:#0a1a3a;font-size:19px;margin-bottom:10px;border-left:4px solid #d4af37;padding-left:8px}
-h3{font-size:16px;margin:12px 0 6px;color:#0a1a3a}
-ul{padding-left:18px;line-height:1.7;font-size:14px}
-.member{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dashed #ddd;font-size:14px}
-.member b{color:#0a1a3a}
-.price{background:#fff8dc;border:1px solid #d4af37;border-radius:12px;padding:12px;margin:10px 0;text-align:center}
-.price b{font-size:22px;color:#0a1a3a}
-.btn{display:block;text-align:center;padding:14px;border-radius:12px;text-decoration:none;font-weight:bold;margin:10px 0;font-size:16px}
-.green{background:#25D366;color:#fff}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+body{background:#f4f6f9;color:#1a1a1a}
+.topbar{background:#0a1a3a;color:#fff;font-size:12px;padding:8px 15px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:5px}
+.topbar span{color:#ffd700}
+.navbar{background:#fff;display:flex;align-items:center;gap:12px;padding:12px 15px;box-shadow:0 2px 10px rgba(0,0,0,.1);position:sticky;top:0;z-index:10}
+.navbar img{width:58px;height:58px;border-radius:50%;border:2px solid #d4af37;object-fit:cover}
+.navbar h1{font-size:17px;color:#0a1a3a;line-height:1.2}
+.navbar p{font-size:11px;color:#666;letter-spacing:1px}
+.menu{background:#0a1a3a;display:flex;overflow-x:auto;white-space:nowrap}
+.menu a{color:#fff;text-decoration:none;padding:12px 14px;font-size:13px;font-weight:600}
+.menu a.active,.menu a:hover{background:#d4af37;color:#000}
+.hero{background:linear-gradient(180deg,#0a1a3a,#143a7a);color:#fff;text-align:center;padding:35px 18px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:url('logo.jpg') center/contain no-repeat;opacity:.07}
+.hero h2{font-size:26px;line-height:1.3;position:relative}
+.hero h2 span{color:#ffd700}
+.hero p{font-size:14px;margin:12px 0 20px;opacity:.9;position:relative}
+.btn{display:inline-block;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:14px;margin:5px}
 .gold{background:#d4af37;color:#000}
-.blue{background:#0a1a3a;color:#fff}
-.center{text-align:center}
-.qr{width:160px;height:160px;background:#eee;border:2px dashed #999;display:flex;align-items:center;justify-content:center;margin:10px auto;border-radius:12px;font-size:13px;text-align:center;padding:10px}
-footer{text-align:center;padding:20px;font-size:12px;opacity:.8}
+.green{background:#25D366;color:#fff}
+.white{background:#fff;color:#0a1a3a}
+.lang{margin-top:15px}
+.lang button{padding:7px 15px;border-radius:20px;border:1px solid #fff;background:transparent;color:#fff;margin:2px;cursor:pointer}
+.lang button.active{background:#ffd700;color:#000;font-weight:bold}
+.wrap{max-width:900px;margin:auto;padding:15px}
+.card{background:#fff;border-radius:14px;padding:20px;margin-bottom:15px;box-shadow:0 3px 15px rgba(0,0,0,.07);border-top:4px solid #d4af37}
+.card h2{color:#0a1a3a;font-size:19px;margin-bottom:12px}
+.card h2:after{content:"";display:block;width:50px;height:3px;background:#d4af37;margin-top:6px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.box{background:#fff8dc;border:1px solid #e8d88a;border-radius:12px;padding:15px;text-align:center}
+.box b{color:#0a1a3a}
+.box p{font-size:13px;margin-top:6px;line-height:1.5}
+.founder{display:flex;gap:15px;align-items:center;flex-wrap:wrap}
+.founder img{width:120px;height:120px;border-radius:50%;border:4px solid #d4af37;object-fit:cover}
+.stars{color:#f5b301;font-size:18px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td{padding:10px 6px;border-bottom:1px solid #eee}
+td:last-child{text-align:right;font-weight:bold;color:#0a1a3a}
+.pricebox{background:#0a1a3a;color:#fff;border-radius:12px;padding:15px;text-align:center;margin:8px 0}
+.pricebox b{font-size:22px;color:#ffd700}
+.pricebox p{font-size:13px;opacity:.9}
+ul{padding-left:18px;line-height:1.8;font-size:14px}
+.qrbox{text-align:center}
+.qrbox img{width:220px;border:3px solid #d4af37;border-radius:12px}
+footer{background:#0a1a3a;color:#fff;text-align:center;padding:25px 15px;font-size:12px;line-height:1.8}
+footer b{color:#ffd700;font-size:14px}
+@media(max-width:600px){.grid3{grid-template-columns:1fr}.navbar h1{font-size:15px}}
 </style>
 </head>
 <body>
 
-<header>
-<img src="founder.jpg" class="logo" alt="Logo">
-<h1>AL-FALAH ASSOCIATION<br>WELFARE GROUP</h1>
-<p class="sub">Ranibennur, Karnataka | Together We Help, Together We Grow</p>
+<div class="topbar">
+<div>📍 Maruti Nagar (Eidgah Mohalla), 6th Cross, Ranibennur - 581115</div>
+<div>📞 <span>9739219595</span> | ✉️ al.falah.awg@gmail.com</div>
+</div>
+
+<div class="navbar">
+<img src="logo.jpg">
+<div><h1>AL-FALAH ASSOCIATION<br>WELFARE GROUP</h1><p>COMMUNITY WELFARE GROUP • RANIBENNUR</p></div>
+</div>
+
+<div class="menu">
+<a class="active" href="#">Home</a><a href="#about">About</a><a href="#membership">Membership</a><a href="#rules">Rules</a><a href="#members">Members</a><a href="#contact">Contact</a>
+</div>
+
+<div class="hero">
+<h2>Empowering Lives Through<br><span>Unity, Help & Support</span></h2>
+<p>Together We Help, Together We Grow<br>Mehnat • Imaandari • Discipline • Bhai-chara</p>
+<a class="btn gold" href="https://wa.me/919739219595?text=Assalamu%20Alaikum%20-%20Mujhe%20AL-FALAH%20me%20Join%20karna%20hai">Join Now - ₹100</a>
+<a class="btn green" href="https://wa.me/919739219595?text=Assalamu%20Alaikum">💬 WhatsApp</a>
 <div class="lang">
 <button class="active" onclick="setLang('en',this)">English</button>
 <button onclick="setLang('kn',this)">ಕನ್ನಡ</button>
 <button onclick="setLang('ur',this)">Roman Urdu</button>
 </div>
-</header>
+</div>
 
-<!-- FOUNDER -->
-<section class="card founder">
-<img src="founder.jpg" alt="Founder">
-<h2 style="border:none;text-align:center;padding:0">Nizam Akhtar Makandar</h2>
-<div class="stars">⭐⭐⭐⭐⭐</div>
-<p><b>Founder</b> | AL-FALAH ASSOCIATION WELFARE GROUP</p>
-<p style="font-size:13px;margin-top:8px">Imandari • Mehnat • Discipline • Bhai-chara</p>
-<a class="btn green" href="https://wa.me/919739219595?text=Assalamu%20Alaikum">💬 WhatsApp - Assalamu Alaikum</a>
-</section>
+<div class="wrap">
 
-<!-- LEADERSHIP -->
-<section class="card">
-<h2 data-en="Leadership Team" data-kn="ನಾಯಕತ್ವ ತಂಡ" data-ur="Leadership Team">Leadership Team</h2>
-<div class="member"><span><b>President</b><br>Raje Sab Bhattur</span><span>⭐⭐⭐⭐</span></div>
-<div class="member"><span><b>Vice President</b><br>Sarfraz Mulla</span><span>⭐⭐⭐</span></div>
-<div class="member"><span><b>Secretary</b><br>Rizwan Nandehalli</span><span>⭐⭐</span></div>
-<div class="member"><span><b>Joint Secretary</b><br>Aman Jad di</span><span>⭐⭐</span></div>
-</section>
+<div class="grid3">
+<div class="box"><b>🎯 OUR MISSION</b><p>Har member ko mehnat se apne pairon par khada karna aur mushkil waqt me saath dena.</p></div>
+<div class="box"><b>👁️ OUR VISION</b><p>Ek aisi community jahan koi bhi zarooratmand akela na ho, sab mil kar aage badhen.</p></div>
+<div class="box"><b>💎 OUR VALUES</b><p>Imaandari, Mehnat, Discipline, Unity aur Fellow Members ki Izzat.</p></div>
+</div>
 
-<!-- MEMBERS -->
-<section class="card">
-<h2>Members ⭐</h2>
-<div class="member"><span>1. Sadik Ilkal</span><span>⭐</span></div>
-<div class="member"><span>2. Dadapeer Davanagere</span><span>⭐</span></div>
-<div class="member"><span>3. Syed Irfan Peer Zade</span><span>⭐</span></div>
-<div class="member"><span>4. Zabiulla Tapal Katti</span><span>⭐</span></div>
-<div class="member"><span>5. Zakir Nandihalli</span><span>⭐</span></div>
-<div class="member"><span>6. Zabiullah Kachvi</span><span>⭐</span></div>
-</section>
+<div class="card" id="about">
+<h2>Founder & Chairman Message</h2>
+<div class="founder">
+<img src="founder.jpg">
+<div><h3 style="color:#0a1a3a">Nizam Akhtar Makandar</h3><div class="stars">⭐⭐⭐⭐⭐</div><p style="font-size:13px;color:#666">Founder & Chairman<br>AL-FALAH ASSOCIATION WELFARE GROUP</p></div>
+</div>
+<p style="font-size:14px;line-height:1.7;margin-top:12px">"Humara maqsad sirf paisa dena nahi hai. Humara maqsad har bhai ko mehnat, imaandari aur discipline se aage badhana hai. Jo mehnat karega, hum uske saath khade hain."</p>
+</div>
 
-<!-- MEMBERSHIP -->
-<section class="card">
-<h2>Membership Contribution & Emergency Assistance Rules</h2>
-<div class="price"><b>Joining Fee: ₹100</b><br>One-time only</div>
-<div class="price"><b>Weekly: ₹100</b><br>Har hafte Welfare Fund me</div>
-<div class="price"><b>Emergency Help: ₹1,000 - ₹20,000</b><br>Interest-Free • No Collateral • Committee Approval</div>
+<div class="card">
+<h2>Leadership Team</h2>
+<table>
+<tr><td><b>President</b><br>Raje Sab Bhattur</td><td>⭐⭐⭐⭐</td></tr>
+<tr><td><b>Vice President</b><br>Sarfraz Mulla</td><td>⭐⭐⭐</td></tr>
+<tr><td><b>Secretary</b><br>Rizwan Nandehalli</td><td>⭐⭐</td></tr>
+<tr><td><b>Joint Secretary</b><br>Aman Jad di</td><td>⭐⭐</td></tr>
+</table>
+</div>
+
+<div class="card" id="members">
+<h2>Members</h2>
+<table>
+<tr><td>1. Sadik Ilkal</td><td>⭐</td></tr>
+<tr><td>2. Dadapeer Davanagere</td><td>⭐</td></tr>
+<tr><td>3. Syed Irfan Peer Zade</td><td>⭐</td></tr>
+<tr><td>4. Zabiulla Tapal Katti</td><td>⭐</td></tr>
+<tr><td>5. Zakir Nandihalli</td><td>⭐</td></tr>
+<tr><td>6. Zabiullah Kachvi</td><td>⭐</td></tr>
+</table>
+</div>
+
+<div class="card" id="membership">
+<h2>Membership Contribution & Emergency Assistance</h2>
+<div class="pricebox"><b>Joining Fee: ₹100</b><p>One-time only</p></div>
+<div class="pricebox"><b>Weekly: ₹100</b><p>Har hafte Welfare Fund me</p></div>
+<div class="pricebox"><b>Emergency Help: ₹1,000 - ₹20,000</b><p>Interest-Free • No Collateral • Committee Approval<br>Repayment: ₹100 per week</p></div>
 <ul>
-<li><b>Repayment:</b> ₹100 per week jab tak poora wapas na ho</li>
-<li><b>Approval:</b> Har madad committee se approve hogi</li>
-<li><b>Welfare Fund:</b> Welfare, Emergency aur Community kaam ke liye</li>
-<li><b>Fairness:</b> Saara hisab likha jayega, sab ke saath insaaf</li>
+<li>Har madad committee se approve hogi</li>
+<li>Saara hisab likha jayega, sab ke saath insaaf</li>
+<li>Welfare Fund - Welfare, Emergency aur Community kaam ke liye</li>
 </ul>
-</section>
+</div>
 
-<!-- ELIGIBILITY -->
-<section class="card">
-<h2>Kaun Member Ban Sakta Hai?</h2>
-<ul>
-<li>Mehnati, Imaandar, Zimmedar, Disciplined</li>
-<li>Apni zindagi sudharna chahta ho, mehnat se aage badhna chahta ho</li>
-<li>Rules, Unity aur Fellow Members ki izzat kare</li>
-<li>Madad sirf paisa nahi - apne pairon par khada hona hai</li>
-</ul>
-<h3>Discipline Ke 8 Qanoon</h3>
+<div class="card" id="rules">
+<h2>Discipline - 8 Qanoon</h2>
 <ul>
 <li><b>1. Achhe Akhlaq:</b> Zimmedar, mehnati, izzat karne wala</li>
 <li><b>2. Nasha se doori:</b> Sharab, Ganja, Nasha wale ko membership nahi</li>
@@ -113,32 +144,31 @@ footer{text-align:center;padding:20px;font-size:12px;opacity:.8}
 <li><b>7. Action:</b> Shikayat par jaanch, pehle mauka, phir Warning / Suspension / Membership Khatam</li>
 <li><b>8. Maqsad:</b> Imaandari, Mehnat, Discipline wale logo ka saath</li>
 </ul>
-</section>
+</div>
 
-<!-- PAYMENT -->
-<section class="card center">
+<div class="card" id="contact">
 <h2>Contact & Payment</h2>
-<p><b>WhatsApp:</b> 9739219595</p>
-<p><b>Email:</b> al.falah.awg@gmail.com</p>
-<p><b>UPI ID:</b> 9739219595-kaff@ibl</p>
-<div class="qr">Yahan apna<br>QR Code ki photo<br>laga dena</div>
-<a class="btn green" href="https://wa.me/919739219595?text=Assalamu%20Alaikum">💬 WhatsApp Par Baat Karo</a>
-<a class="btn gold" href="upi://pay?pa=9739219595-kaff@ibl&pn=AL-FALAH%20ASSOCIATION&cu=INR">💳 Pay ₹100 - UPI App Khulega</a>
-<a class="btn blue" href="mailto:al.falah.awg@gmail.com">✉️ Email Karo</a>
-<p style="font-size:12px;margin-top:10px">Ranibennur, Karnataka, India</p>
-</section>
+<p style="font-size:14px;line-height:1.8"><b>Address:</b><br>Maruti Nagar (Eidgah Mohalla), 6th Cross,<br>Ranibennur - 581115, Dist: Haveri, Karnataka, India<br><b>WhatsApp:</b> 9739219595<br><b>Email:</b> al.falah.awg@gmail.com<br><b>UPI ID:</b> 9739219595-kaff@ibl</p>
+<div class="qrbox" style="margin-top:15px">
+<img src="qr.jpg">
+<p style="font-size:13px;margin-top:8px"><b>Scan & Pay - PhonePe</b><br>NIZAMUDDIN ABDUL LATEEF FAKIR</p>
+</div>
+<a class="btn green" style="display:block;text-align:center;margin-top:15px" href="https://wa.me/919739219595?text=Assalamu%20Alaikum">💬 WhatsApp Par Baat Karo</a>
+<a class="btn gold" style="display:block;text-align:center" href="upi://pay?pa=9739219595-kaff@ibl&pn=AL-FALAH%20ASSOCIATION&cu=INR">💳 Pay ₹100 - UPI App Khulega</a>
+</div>
 
-<footer>© 2026 AL-FALAH ASSOCIATION WELFARE GROUP<br>Mehnat • Imaandari • Unity • Taraqqi</footer>
+</div>
+
+<footer>
+<b>AL-FALAH ASSOCIATION WELFARE GROUP</b><br>
+Maruti Nagar (Eidgah Mohalla), 6th Cross, Ranibennur - 581115, Dist: Haveri, Karnataka, India<br>
+© 2026 All Rights Reserved | Mehnat • Imaandari • Unity • Taraqqi
+</footer>
 
 <script>
 function setLang(l,btn){
 document.querySelectorAll('.lang button').forEach(b=>b.classList.remove('active'));
 btn.classList.add('active');
-document.querySelectorAll('[data-en]').forEach(el=>{
-if(l==='en') el.innerText=el.dataset.en;
-if(l==='kn') el.innerText=el.dataset.kn;
-if(l==='ur') el.innerText=el.dataset.ur;
-});
 }
 </script>
 </body>
