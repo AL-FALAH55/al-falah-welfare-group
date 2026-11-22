@@ -184,3 +184,21 @@ m1:"Every help will be approved by the committee",m2:"All accounts will be writt
 rules_t:"Discipline - 8 Rules",
 r1:"<b>1. Good Character:</b> Responsible, hardworking, respectful",
 r2:"<b>2. No Intoxication:</b> No membership for alcohol, gan
+
+<script>
+const T = {
+en:{hero_title:'Empowering Lives Through<br><span>Unity, Help & Support</span>',hero_sub:"Together We Help, Together We Grow<br>Hard Work • Honesty • Discipline • Brotherhood",mission_p:"To make every member stand on their own feet through hard work and support them in difficult times.",vision_p:"A community where no needy person is alone, and everyone moves forward together.",values_p:"Honesty, Hard Work, Discipline, Unity and Respect for Fellow Members.",founder_msg:"Our aim is not just to give money. Our aim is to help every brother move forward with hard work, honesty and discipline.",member_t:"Membership Contribution & Emergency Assistance",rules_t:"Discipline - 8 Rules",contact_t:"Contact & Payment"},
+kn:{hero_title:'ಒಗ್ಗಟ್ಟು, ಸಹಾಯ ಮತ್ತು ಬೆಂಬಲದ ಮೂಲಕ<br><span>ಜೀವನವನ್ನು ಸಬಲಗೊಳಿಸುವುದು</span>',hero_sub:"ಒಟ್ಟಿಗೆ ಸಹಾಯ ಮಾಡೋಣ, ಒಟ್ಟಿಗೆ ಬೆಳೆಯೋಣ<br>ಪರಿಶ್ರಮ • ಪ್ರಾಮಾಣಿಕತೆ • ಶಿಸ್ತು • ಸಹೋದರತ್ವ",mission_p:"ಪ್ರತಿಯೊಬ್ಬ ಸದಸ್ಯರು ಪರಿಶ್ರಮದಿಂದ ಸ್ವಂತ ಕಾಲಿನ ಮೇಲೆ ನಿಲ್ಲುವಂತೆ ಮಾಡುವುದು ಮತ್ತು ಕಷ್ಟದ ಸಮಯದಲ್ಲಿ ಜೊತೆಯಾಗುವುದು.",vision_p:"ಯಾವುದೇ ಅಗತ್ಯವಿರುವ ವ್ಯಕ್ತಿ ಒಬ್ಬಂಟಿಯಾಗದ, ಎಲ್ಲರೂ ಒಟ್ಟಿಗೆ ಮುಂದೆ ಸಾಗುವ ಸಮುದಾಯ.",values_p:"ಪ್ರಾಮಾಣಿಕತೆ, ಪರಿಶ್ರಮ, ಶಿಸ್ತು, ಒಗ್ಗಟ್ಟು ಮತ್ತು ಸಹ ಸದಸ್ಯರ ಗೌರವ.",founder_msg:"ನಮ್ಮ ಉದ್ದೇಶ ಕೇವಲ ಹಣ ಕೊಡುವುದಲ್ಲ. ಪ್ರತಿಯೊಬ್ಬ ಸಹೋದರನನ್ನು ಪರಿಶ್ರಮ, ಪ್ರಾಮಾಣಿಕತೆ ಮತ್ತು ಶಿಸ್ತಿನಿಂದ ಮುಂದೆ ಕೊಂಡೊಯ್ಯುವುದು ನಮ್ಮ ಉದ್ದೇಶ.",member_t:"ಸದಸ್ಯತ್ವ ಕೊಡುಗೆ ಮತ್ತು ತುರ್ತು ಸಹಾಯ",rules_t:"ಶಿಸ್ತು - 8 ನಿಯಮಗಳು",contact_t:"ಸಂಪರ್ಕ ಮತ್ತು ಪಾವತಿ"},
+ur:{hero_title:'Empowering Lives Through<br><span>Unity, Help & Support</span>',hero_sub:"Together We Help, Together We Grow<br>Mehnat • Imaandari • Discipline • Bhai-chara",mission_p:"Har member ko mehnat se apne pairon par khada karna aur mushkil waqt me saath dena.",vision_p:"Ek aisi community jahan koi bhi zarooratmand akela na ho, sab mil kar aage badhen.",values_p:"Imaandari, Mehnat, Discipline, Unity aur Fellow Members ki Izzat.",founder_msg:"Humara maqsad sirf paisa dena nahi hai. Humara maqsad har bhai ko mehnat, imaandari aur discipline se aage badhana hai.",member_t:"Membership Contribution & Emergency Assistance",rules_t:"Discipline - 8 Qanoon",contact_t:"Contact & Payment"}
+};
+function setLang(l,btn){
+document.querySelectorAll('.lang button').forEach(b=>b.classList.remove('active'));
+btn.classList.add('active');
+document.querySelectorAll('[data-i18n]').forEach(el=>{
+var k=el.getAttribute('data-i18n');
+if(T[l] && T[l][k]) el.innerHTML=T[l][k];
+});
+}
+</script>
+</body>
+</html>
