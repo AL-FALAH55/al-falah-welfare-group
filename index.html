@@ -24,7 +24,6 @@ body{background:#f4f6f9;color:#1a1a1a}
 .btn{display:inline-block;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:14px;margin:5px}
 .gold{background:#d4af37;color:#000}
 .green{background:#25D366;color:#fff}
-.white{background:#fff;color:#0a1a3a}
 .lang{margin-top:15px}
 .lang button{padding:7px 15px;border-radius:20px;border:1px solid #fff;background:transparent;color:#fff;margin:2px;cursor:pointer}
 .lang button.active{background:#ffd700;color:#000;font-weight:bold}
@@ -66,13 +65,13 @@ footer b{color:#ffd700;font-size:14px}
 </div>
 
 <div class="menu">
-<a class="active" href="#">Home</a><a href="#about">About</a><a href="#membership">Membership</a><a href="#rules">Rules</a><a href="#members">Members</a><a href="#contact">Contact</a>
+<a class="active" href="#" data-i18n="m_home">Home</a><a href="#about" data-i18n="m_about">About</a><a href="#membership" data-i18n="m_member">Membership</a><a href="#rules" data-i18n="m_rules">Rules</a><a href="#members" data-i18n="m_members">Members</a><a href="#contact" data-i18n="m_contact">Contact</a>
 </div>
 
 <div class="hero">
-<h2>Empowering Lives Through<br><span>Unity, Help & Support</span></h2>
-<p>Together We Help, Together We Grow<br>Mehnat • Imaandari • Discipline • Bhai-chara</p>
-<a class="btn gold" href="https://wa.me/919739219595?text=Assalamu%20Alaikum%20-%20Mujhe%20AL-FALAH%20me%20Join%20karna%20hai">Join Now - ₹100</a>
+<h2 data-i18n="hero_title">Empowering Lives Through<br><span>Unity, Help & Support</span></h2>
+<p data-i18n="hero_sub">Together We Help, Together We Grow<br>Mehnat • Imaandari • Discipline • Bhai-chara</p>
+<a class="btn gold" href="https://wa.me/919739219595?text=Assalamu%20Alaikum%20-%20Mujhe%20AL-FALAH%20me%20Join%20karna%20hai" data-i18n="join_btn">Join Now - ₹100</a>
 <a class="btn green" href="https://wa.me/919739219595?text=Assalamu%20Alaikum">💬 WhatsApp</a>
 <div class="lang">
 <button class="active" onclick="setLang('en',this)">English</button>
@@ -84,32 +83,32 @@ footer b{color:#ffd700;font-size:14px}
 <div class="wrap">
 
 <div class="grid3">
-<div class="box"><b>🎯 OUR MISSION</b><p>Har member ko mehnat se apne pairon par khada karna aur mushkil waqt me saath dena.</p></div>
-<div class="box"><b>👁️ OUR VISION</b><p>Ek aisi community jahan koi bhi zarooratmand akela na ho, sab mil kar aage badhen.</p></div>
-<div class="box"><b>💎 OUR VALUES</b><p>Imaandari, Mehnat, Discipline, Unity aur Fellow Members ki Izzat.</p></div>
+<div class="box"><b data-i18n="mission_t">🎯 OUR MISSION</b><p data-i18n="mission_p">Har member ko mehnat se apne pairon par khada karna aur mushkil waqt me saath dena.</p></div>
+<div class="box"><b data-i18n="vision_t">👁️ OUR VISION</b><p data-i18n="vision_p">Ek aisi community jahan koi bhi zarooratmand akela na ho, sab mil kar aage badhen.</p></div>
+<div class="box"><b data-i18n="values_t">💎 OUR VALUES</b><p data-i18n="values_p">Imaandari, Mehnat, Discipline, Unity aur Fellow Members ki Izzat.</p></div>
 </div>
 
 <div class="card" id="about">
-<h2>Founder & Chairman Message</h2>
+<h2 data-i18n="founder_t">Founder & Chairman Message</h2>
 <div class="founder">
 <img src="founder.jpg">
-<div><h3 style="color:#0a1a3a">Nizam Akhtar Makandar</h3><div class="stars">⭐⭐⭐⭐⭐</div><p style="font-size:13px;color:#666">Founder & Chairman<br>AL-FALAH ASSOCIATION WELFARE GROUP</p></div>
+<div><h3 style="color:#0a1a3a">Nizam Akhtar Makandar</h3><div class="stars">⭐⭐⭐⭐⭐</div><p style="font-size:13px;color:#666"><span data-i18n="founder_role">Founder & Chairman</span><br>AL-FALAH ASSOCIATION WELFARE GROUP</p></div>
 </div>
-<p style="font-size:14px;line-height:1.7;margin-top:12px">"Humara maqsad sirf paisa dena nahi hai. Humara maqsad har bhai ko mehnat, imaandari aur discipline se aage badhana hai. Jo mehnat karega, hum uske saath khade hain."</p>
+<p style="font-size:14px;line-height:1.7;margin-top:12px" data-i18n="founder_msg">"Humara maqsad sirf paisa dena nahi hai. Humara maqsad har bhai ko mehnat, imaandari aur discipline se aage badhana hai. Jo mehnat karega, hum uske saath khade hain."</p>
 </div>
 
 <div class="card">
-<h2>Leadership Team</h2>
+<h2 data-i18n="leader_t">Leadership Team</h2>
 <table>
-<tr><td><b>President</b><br>Raje Sab Bhattur</td><td>⭐⭐⭐⭐</td></tr>
-<tr><td><b>Vice President</b><br>Sarfraz Mulla</td><td>⭐⭐⭐</td></tr>
-<tr><td><b>Secretary</b><br>Rizwan Nandehalli</td><td>⭐⭐</td></tr>
-<tr><td><b>Joint Secretary</b><br>Aman Jad di</td><td>⭐⭐</td></tr>
+<tr><td><b data-i18n="pres">President</b><br>Raje Sab Bhattur</td><td>⭐⭐⭐⭐</td></tr>
+<tr><td><b data-i18n="vp">Vice President</b><br>Sarfraz Mulla</td><td>⭐⭐⭐</td></tr>
+<tr><td><b data-i18n="sec">Secretary</b><br>Rizwan Nandehalli</td><td>⭐⭐</td></tr>
+<tr><td><b data-i18n="jsec">Joint Secretary</b><br>Aman Jad di</td><td>⭐⭐</td></tr>
 </table>
 </div>
 
 <div class="card" id="members">
-<h2>Members</h2>
+<h2 data-i18n="members_t">Members</h2>
 <table>
 <tr><td>1. Sadik Ilkal</td><td>⭐</td></tr>
 <tr><td>2. Dadapeer Davanagere</td><td>⭐</td></tr>
@@ -121,40 +120,40 @@ footer b{color:#ffd700;font-size:14px}
 </div>
 
 <div class="card" id="membership">
-<h2>Membership Contribution & Emergency Assistance</h2>
-<div class="pricebox"><b>Joining Fee: ₹100</b><p>One-time only</p></div>
-<div class="pricebox"><b>Weekly: ₹100</b><p>Har hafte Welfare Fund me</p></div>
-<div class="pricebox"><b>Emergency Help: ₹1,000 - ₹20,000</b><p>Interest-Free • No Collateral • Committee Approval<br>Repayment: ₹100 per week</p></div>
+<h2 data-i18n="member_t">Membership Contribution & Emergency Assistance</h2>
+<div class="pricebox"><b data-i18n="join_fee">Joining Fee: ₹100</b><p data-i18n="join_fee_s">One-time only</p></div>
+<div class="pricebox"><b data-i18n="weekly">Weekly: ₹100</b><p data-i18n="weekly_s">Har hafte Welfare Fund me</p></div>
+<div class="pricebox"><b data-i18n="emerg">Emergency Help: ₹1,000 - ₹20,000</b><p data-i18n="emerg_s">Interest-Free • No Collateral • Committee Approval<br>Repayment: ₹100 per week</p></div>
 <ul>
-<li>Har madad committee se approve hogi</li>
-<li>Saara hisab likha jayega, sab ke saath insaaf</li>
-<li>Welfare Fund - Welfare, Emergency aur Community kaam ke liye</li>
+<li data-i18n="m1">Har madad committee se approve hogi</li>
+<li data-i18n="m2">Saara hisab likha jayega, sab ke saath insaaf</li>
+<li data-i18n="m3">Welfare Fund - Welfare, Emergency aur Community kaam ke liye</li>
 </ul>
 </div>
 
 <div class="card" id="rules">
-<h2>Discipline - 8 Qanoon</h2>
+<h2 data-i18n="rules_t">Discipline - 8 Qanoon</h2>
 <ul>
-<li><b>1. Achhe Akhlaq:</b> Zimmedar, mehnati, izzat karne wala</li>
-<li><b>2. Nasha se doori:</b> Sharab, Ganja, Nasha wale ko membership nahi</li>
-<li><b>3. Juwa mana hai:</b> Juwa, Satta wale na-ahl hain</li>
-<li><b>4. Jhagda mana hai:</b> Gaali, Dhamki, Maar-peet, Badtameezi nahi</li>
-<li><b>5. Mehnat ki soch:</b> Kaam karne wale ko tarjeeh</li>
-<li><b>6. Discipline:</b> Committee ke faisle ki pabandi zaroori</li>
-<li><b>7. Action:</b> Shikayat par jaanch, pehle mauka, phir Warning / Suspension / Membership Khatam</li>
-<li><b>8. Maqsad:</b> Imaandari, Mehnat, Discipline wale logo ka saath</li>
+<li data-i18n="r1"><b>1. Achhe Akhlaq:</b> Zimmedar, mehnati, izzat karne wala</li>
+<li data-i18n="r2"><b>2. Nasha se doori:</b> Sharab, Ganja, Nasha wale ko membership nahi</li>
+<li data-i18n="r3"><b>3. Juwa mana hai:</b> Juwa, Satta wale na-ahl hain</li>
+<li data-i18n="r4"><b>4. Jhagda mana hai:</b> Gaali, Dhamki, Maar-peet, Badtameezi nahi</li>
+<li data-i18n="r5"><b>5. Mehnat ki soch:</b> Kaam karne wale ko tarjeeh</li>
+<li data-i18n="r6"><b>6. Discipline:</b> Committee ke faisle ki pabandi zaroori</li>
+<li data-i18n="r7"><b>7. Action:</b> Shikayat par jaanch, pehle mauka, phir Warning / Suspension / Membership Khatam</li>
+<li data-i18n="r8"><b>8. Maqsad:</b> Imaandari, Mehnat, Discipline wale logo ka saath</li>
 </ul>
 </div>
 
 <div class="card" id="contact">
-<h2>Contact & Payment</h2>
-<p style="font-size:14px;line-height:1.8"><b>Address:</b><br>Maruti Nagar (Eidgah Mohalla), 6th Cross,<br>Ranibennur - 581115, Dist: Haveri, Karnataka, India<br><b>WhatsApp:</b> 9739219595<br><b>Email:</b> al.falah.awg@gmail.com<br><b>UPI ID:</b> 9739219595-kaff@ibl</p>
+<h2 data-i18n="contact_t">Contact & Payment</h2>
+<p style="font-size:14px;line-height:1.8"><b data-i18n="addr_l">Address:</b><br>Maruti Nagar (Eidgah Mohalla), 6th Cross,<br>Ranibennur - 581115, Dist: Haveri, Karnataka, India<br><b>WhatsApp:</b> 9739219595<br><b>Email:</b> al.falah.awg@gmail.com<br><b>UPI ID:</b> 9739219595-kaff@ibl</p>
 <div class="qrbox" style="margin-top:15px">
 <img src="qr.jpg">
-<p style="font-size:13px;margin-top:8px"><b>Scan & Pay - PhonePe</b><br>NIZAMUDDIN ABDUL LATEEF FAKIR</p>
+<p style="font-size:13px;margin-top:8px"><b data-i18n="scan">Scan & Pay - PhonePe</b><br>NIZAMUDDIN ABDUL LATEEF FAKIR</p>
 </div>
-<a class="btn green" style="display:block;text-align:center;margin-top:15px" href="https://wa.me/919739219595?text=Assalamu%20Alaikum">💬 WhatsApp Par Baat Karo</a>
-<a class="btn gold" style="display:block;text-align:center" href="upi://pay?pa=9739219595-kaff@ibl&pn=AL-FALAH%20ASSOCIATION&cu=INR">💳 Pay ₹100 - UPI App Khulega</a>
+<a class="btn green" style="display:block;text-align:center;margin-top:15px" href="https://wa.me/919739219595?text=Assalamu%20Alaikum" data-i18n="wa_btn">💬 WhatsApp Par Baat Karo</a>
+<a class="btn gold" style="display:block;text-align:center" href="upi://pay?pa=9739219595-kaff@ibl&pn=AL-FALAH%20ASSOCIATION&cu=INR" data-i18n="pay_btn">💳 Pay ₹100 - UPI App Khulega</a>
 </div>
 
 </div>
@@ -162,14 +161,26 @@ footer b{color:#ffd700;font-size:14px}
 <footer>
 <b>AL-FALAH ASSOCIATION WELFARE GROUP</b><br>
 Maruti Nagar (Eidgah Mohalla), 6th Cross, Ranibennur - 581115, Dist: Haveri, Karnataka, India<br>
-© 2026 All Rights Reserved | Mehnat • Imaandari • Unity • Taraqqi
+<span data-i18n="foot">© 2026 All Rights Reserved | Mehnat • Imaandari • Unity • Taraqqi</span>
 </footer>
 
 <script>
-function setLang(l,btn){
-document.querySelectorAll('.lang button').forEach(b=>b.classList.remove('active'));
-btn.classList.add('active');
-}
-</script>
-</body>
-</html>
+const T = {
+en:{
+m_home:"Home",m_about:"About",m_member:"Membership",m_rules:"Rules",m_members:"Members",m_contact:"Contact",
+hero_title:'Empowering Lives Through<br><span>Unity, Help & Support</span>',
+hero_sub:"Together We Help, Together We Grow<br>Hard Work • Honesty • Discipline • Brotherhood",
+join_btn:"Join Now - ₹100",
+mission_t:"🎯 OUR MISSION",mission_p:"To make every member stand on their own feet through hard work and support them in difficult times.",
+vision_t:"👁️ OUR VISION",vision_p:"A community where no needy person is alone, and everyone moves forward together.",
+values_t:"💎 OUR VALUES",values_p:"Honesty, Hard Work, Discipline, Unity and Respect for Fellow Members.",
+founder_t:"Founder & Chairman Message",founder_role:"Founder & Chairman",
+founder_msg:"\"Our aim is not just to give money. Our aim is to help every brother move forward with hard work, honesty and discipline. Whoever works hard, we stand with him.\"",
+leader_t:"Leadership Team",pres:"President",vp:"Vice President",sec:"Secretary",jsec:"Joint Secretary",
+members_t:"Members",member_t:"Membership Contribution & Emergency Assistance",
+join_fee:"Joining Fee: ₹100",join_fee_s:"One-time only",weekly:"Weekly: ₹100",weekly_s:"Every week in Welfare Fund",
+emerg:"Emergency Help: ₹1,000 - ₹20,000",emerg_s:"Interest-Free • No Collateral • Committee Approval<br>Repayment: ₹100 per week",
+m1:"Every help will be approved by the committee",m2:"All accounts will be written, justice for all",m3:"Welfare Fund - For Welfare, Emergency and Community work",
+rules_t:"Discipline - 8 Rules",
+r1:"<b>1. Good Character:</b> Responsible, hardworking, respectful",
+r2:"<b>2. No Intoxication:</b> No membership for alcohol, gan
